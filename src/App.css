@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://wallpapers.com/images/featured/clear-sky-0ke2itg1dzw1rcj0.jpg');
+}
+
+@keyframes logoAnimation {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.App {
+ 
+  background-size: cover;
+  background-position: center;
+ /* Ensure the background covers the entire viewport */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px;
+  height: auto; /* Auto height to adjust based on content */
+  margin: 10vh auto; /* Center the container vertically */
+  box-shadow: 0.5px 6px 17px 0.75px rgba(23, 15, 243, 0.738);
+  border-radius: 10px;
+  padding: 50px; /* Add padding for better spacing */
+  transition: transform 0.3s ease-in-out;
+}
+.App:hover{
+  transform: scale(1.05);
+}
+h1 {
+  text-align: center;
+  color: #e7ecedef;
+  padding: 2px;
+  animation: logoAnimation 0.3s infinite;
+}
+.light-effect {
+  font-size: 36px;
+  color: rgb(206, 206, 227);
+  text-shadow: 0 0 10px rgb(116, 183, 235);
+  transition: text-shadow 0.5s ease-in-out;
+  animation: logoAnimation 0.3s infinite;
+}
+
+.light-effect:hover {
+  text-shadow: 0 0 20px rgb(102, 127, 237), 0 0 30px rgb(70, 98, 226), 0 0 40px rgb(100, 100, 200), 0 0 70px blue, 0 0 80px blue, 0 0 100px blue, 0 0 150px blue;
+}
+div {
+  margin-bottom: 20px;
+}
+.cont{
+  padding: 20px;
+  padding-top: 40px;
+  padding-inline-start: 10px;
+  padding-right: 20px;
+  align-items:first baseline;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+input {
+  box-shadow: 0.9px 6px 17px 0.75px rgba(5, 139, 249, 0.738);
+  padding: 10px;
+  width: calc(100% - 16px); /* Adjust the width considering padding */
+  box-sizing: border-box; /* Include padding and border in the width */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(255, 255, 255, 0.047);
+  border: 2px solid rgba(10, 88, 245, 0.526); 
+  color: #f5f3f4;
+  font-size: x-large;
+  font-weight: bold;
+  background-size: cover;
+    transition: background-color 0.3s;
+    animation: fadeIn 0.5s ease;
+}
+
+p {
+  margin: 8px 0;
+  color: rgba(28, 27, 27, 0.807);
+  font-weight: bolder;
+  font-size: 0.9rem;
+  text-shadow: 2px 2px 4px rgba(183, 215, 236, 0.5);
+}
+
+p.error {
+  color: rgba(66, 63, 63, 0.705);
+}
+h2{
+  color: rgb(56, 56, 58);
+  text-shadow: 0 0 16px rgb(174, 173, 182);
+  transition: text-shadow 0.5s ease-in-out;
+}
+h2:hover{
+
+  text-shadow: 0 0 20px rgb(230, 231, 238), 0 0 30px rgb(186, 190, 208), 0 0 40px rgb(185, 185, 222), 0 0 70px rgb(243, 243, 246), 0 0 80px rgb(226, 226, 231), 0 0 100px rgb(226, 226, 235), 0 0 150px blue;
+}
